@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b, c, car;
+
+    scanf("%d%d%d%d", &a, &b, &c, &car);
+
+    if (car % 3 == 1)
+        printf("Car %d goes into road A", car);
+    else if (car % 3 == 2)
+        printf("Car %d goes into road B", car);
+    else if (car % 3 == 0)
+        printf("Car %d goes into road C", car);
+    else
+        printf("No path exists");
+
+    return 0;
+}
+
+/*Sample Input :-
+243
+136
+567
+17
+
+/*Output :-
+Car 17 goes into road B
